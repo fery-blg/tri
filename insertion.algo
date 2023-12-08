@@ -1,0 +1,23 @@
+// ALGORITHME ""
+algorithme insert
+
+
+     var t:array of INTERGER
+     i,j,key :INTERGER
+    
+BEGIN-
+    // Votre algorithme ici ! 🤓
+    for i from 1 to t.length-1 do 
+        key := t[i]
+        j :=i-1
+        while j>= 0 and array[j]>key do 
+            array [j+1] := array [j]
+            j--
+        end while
+        array[j+1] := key 
+    end for
+        
+
+
+    
+END_ALGORITHME
